@@ -15,6 +15,19 @@ rm package.json
 npm init
 ubuntu@ip-172-31-39-188:~/CIS419_ChapterSix$ npm install --save react react-dom
 npm install --save-dev @babel/core babel-loader @babel/preset-env @babel/preset-react clean-webpack-plugin css-loader file-loader  html-webpack-plugin style-loader url-loader webpack webpack-cli webpack-dev-server
+npm install --save react-helmet
+npm install --save-dev mini-css-extract-plugin
+npm install --save express
+npm install --save nodemon
+npm install --save compression cors helmet
+
+
+
+
+ npm install --save   graphql@16.5.0
+
+
+
 
 
 
