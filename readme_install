@@ -64,6 +64,25 @@ sudo vi apache2.conf
 sudo service apache2 restart
 history
 
+ubuntu@ip-172-31-39-188:~$ ls
+CIS419_ChapterSix
+ubuntu@ip-172-31-39-188:~$ sudo mysql
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+ubuntu@ip-172-31-39-188:~$ sudo mysql -u root -p
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 20
+Server version: 8.0.35-0ubuntu0.22.04.1 (Ubuntu)
+
+Copyright (c) 2000, 2023, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql>
 
 
 
