@@ -13,6 +13,7 @@ cd CIS419_ChapterSix/
 
 rm package.json
 npm init
+ubuntu@ip-172-31-39-188:~/CIS419_ChapterSix$ npm install --save react react-dom
 
 
 
