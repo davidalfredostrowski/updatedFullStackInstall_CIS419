@@ -91,7 +91,13 @@ Query OK, 1 row affected, 2 warnings (0.01 sec)
 
 mysql>
 
+# verify with phpmyadmin
+http://ec2-52-10-244-154.us-west-2.compute.amazonaws.com/phpmyadmin
 
+login : root
+pw    : Password123#@!
+
+ubuntu@ip-172-31-39-188:~$ npm install --save sequelize mysql2
 
 
 
