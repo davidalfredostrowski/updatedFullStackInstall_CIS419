@@ -57,6 +57,12 @@ sudo apache2.conf
 Include /etc/phpmyadmin/apache.conf
 
 
+sudo apt-get install phpmyadmin
+cd /etc/apache2
+ls
+sudo vi apache2.conf
+sudo service apache2 restart
+history
 
 
 
