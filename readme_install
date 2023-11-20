@@ -111,6 +111,36 @@ REACT_APP_SECRET=
 JWT_SECRET_KEY=Asdadfafasdfasdfsadfsadfsadfasdfasdfasddddddddddddddddddddddddddddsadffffffffffvadfadfasdfasssssssss1231231231231231321231231231
 
 
+# validate the package.json file 
+### since I reinitialized the package.json  - i need to make sure that the following definitions are present......
+vi package.json 
+ "scripts": {
+    "client": "webpack serve --devtool inline-source-map --hot --config webpack.client.config.js",
+    "server": "nodemon --exec babel-node --plugins require-context-hook --watch src/server src/server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+
+
+# chapter 4
+ubuntu@ip-172-31-39-188:~$ npm install --save @apollo/client graphql
+
+ubuntu@ip-172-31-39-188:~$ npm install react-infinite-scroll-component --save
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
