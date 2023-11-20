@@ -167,7 +167,33 @@ ubuntu@ip-172-31-39-188:~$ npm install --save jsonwebtoken bcrypt
 
 
 
+# testing (retesting chapter one) 
+ npm run client
+  157  vi package.json
+  158  npm run test
+  159  vi package.json
+  160  npm run test
+  161  ls
+  162  vi package-lock.json
+  163  vi package.json
+  164  npm run test
+  165  cat error.log
+  166  ls
+  167  cat .evn
+  168  cat .env
+  169  vi .env
+  170  souce .env
+  171  source .env
+  172  npm run test
+  173  npm run
+  174  ls
+  175  vi package.json
+  176  npm run test
+  177  npm run client
+  178  history
 
+# with the commands I put in two 'script' sections in package.json  - which created a lot of confusion
+# when i cleaned this up it worked approopriately.
 
 
 
