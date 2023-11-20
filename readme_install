@@ -98,6 +98,18 @@ login : root
 pw    : Password123#@!
 
 ubuntu@ip-172-31-39-188:~$ npm install --save sequelize mysql2
+ npm install --save-dev babel-plugin-require-context-hook
+# check .env to make sure you have appropriate NODE_ENV to development (e.g. below)
+
+NODE_ENV=development
+NODE_ENV=development
+HOST=ec2-34-220-134-163.us-west-2.compute.amazonaws.com
+REACT_APP_API_HOST=ec2-34-220-134-163.us-west-2.compute.amazonaws.com
+DANGEROUSLY_DISABLE_HOST_CHECK=true
+REACT_APP_VAR=
+REACT_APP_SECRET=
+JWT_SECRET_KEY=Asdadfafasdfasdfsadfsadfsadfasdfasdfasddddddddddddddddddddddddddddsadffffffffffvadfadfasdfasssssssss1231231231231231321231231231
+
 
 
 
