@@ -146,6 +146,24 @@ npm i --save @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons
 ubuntu@ip-172-31-39-188:~$ npm install --save jsonwebtoken bcrypt
 
 
+###### now i am restored up to chapter 6+ 
+###### step in slowly with the testing.
+
+
+  115  cd CIS419_ChapterSix/
+  116  ls
+  117  vi .env
+  118  source .env
+  119  ls
+  120  vi webpack.client.config.js
+  121  cd src/client/apollo
+  122  ls
+  123  vi index.js
+  124  cd ..
+  125  ls
+  126  vi webpack.client.config.js
+  127  vi package.json
+  128  history
 
 
 
