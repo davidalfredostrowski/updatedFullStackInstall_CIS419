@@ -129,6 +129,7 @@ ubuntu@ip-172-31-39-188:~$ npm install react-infinite-scroll-component --save
 
 
 
+npm i --save @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/free-brands-svg-icons @fortawesome/react-fontawesome
 
 
 
