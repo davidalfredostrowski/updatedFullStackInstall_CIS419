@@ -128,8 +128,25 @@ ubuntu@ip-172-31-39-188:~$ npm install --save @apollo/client graphql
 ubuntu@ip-172-31-39-188:~$ npm install react-infinite-scroll-component --save
 
 
+# validate this with the book.......
+  289  npm install apollo-client
+  290  npm install apollo-cache-inmemory
+  291  npm install apollo-link-http
+  292  npm install apollo-link-error
+  293  npm install apollo-link
+
+  296  npm install react-apollo
+  297  npm install react-infinite-scroller
+  298  npm install react-apollo
+
 
 npm i --save @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/free-brands-svg-icons @fortawesome/react-fontawesome
+
+
+ubuntu@ip-172-31-39-188:~$ npm install --save jsonwebtoken bcrypt
+
+
+
 
 
 
