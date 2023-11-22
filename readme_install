@@ -197,7 +197,7 @@ ubuntu@ip-172-31-39-188:~$ npm install --save jsonwebtoken bcrypt
 
 
 
-
+I had to change two separate files ( App.js / index.js ) in order to 'retest' the chapter one content. 
 
 
 
