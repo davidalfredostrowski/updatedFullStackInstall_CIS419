@@ -143,7 +143,7 @@ ubuntu@ip-172-31-39-188:~$ npm install react-infinite-scroll-component --save
 
 
 # validate this with the book.......
-  289  npm install apollo-clientZZ
+  289  npm install apollo-client
   290  npm install apollo-cache-inmemory
   291  npm install apollo-link-http
   292  npm install apollo-link-error
@@ -260,7 +260,32 @@ Using environment "development".
 
 
 
+# validate the DNS in index.js  (found in <project>/src/client/apollo/index.js)
 
+
+    onError(({ graphQLErrors, networkError }) => {
+      if (graphQLErrors) {
+        graphQLErrors.map(({ message, locations, path, extensions }) => {
+          if(extensions.code === 'UNAUTHENTICATED') {
+            localStorage.removeItem('jwt');
+            client.clearStore()
+          }
+          console.log(`[GraphQL error]: Message: ${message}, Location:
+          ${locations}, Path: ${path}`);
+        });
+        if (networkError) {
+          console.log(`[Network error]: ${networkError}`);
+        }
+      }
+    }),
+    AuthLink,
+    new HttpLink({
+      uri: 'http://ec2-54-70-44-189.us-west-2.compute.amazonaws.com:8000/graphql',
+      credentials: 'same-origin',
+    }),
+ ]),
+ cache: new InMemoryCache(),
+});
 
 
 
