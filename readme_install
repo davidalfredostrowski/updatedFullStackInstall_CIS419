@@ -32,7 +32,8 @@ npm install --save compression cors helmet
 
 # i had to back out to the last documented package.json file due to conflicts with node20. 
 npm install --save apollo-server-express@3.10.0
-npm install --save   graphql@16.5.0
+npm install --save   graphql@16.5.0   #### confirming this  - it had graphql@15.8.0
+
 ubuntu@ip-172-31-39-188:~/CIS419_ChapterSix$ npm install --save  @graphql-tools/schema
 npm install --save winston
 
@@ -288,6 +289,88 @@ Using environment "development".
 });
 
 
+# next, brought up src/client/index.js 
+up to chapter Four (part2) update: 
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import { ApolloProvider } from 'react-apollo';
+import client from './apollo';
+
+ReactDOM.render(
+    <ApolloProvider client={client}>
+        <App/>
+    </ApolloProvider>
+, document.getElementById('root'));
+
+#next update App.js to the chapter four 
+# src/client/App.js
+
+import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
+import Feed from './Feed';
+import '../../assets/css/style.css';
+
+
+const App = () => {
+        return (
+            <div className="container">
+                <Helmet>
+                    <title>Graphbook - Feed</title>
+                    <meta name="description" content="Newsfeed of all your friends on Graphbook" />
+                </Helmet>
+                <Feed />
+            </div>
+        )
+    }
+export default App
+
+
+
+# I also validated the Feed.js version (to the chapter four backup on github ) 
+
+# now i am trying to bring up the "npm run server"
+ npm run server
+
+> cis419_chaptersix@1.0.0 server
+> nodemon --exec babel-node --plugins require-context-hook --watch src/server src/server/index.js
+
+[nodemon] 3.0.2
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): src/server/**/*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `babel-node --plugins require-context-hook src/server/index.js`
+sh: 1: babel-node: not found
+[nodemon] failed to start process, "babel-node" exec not found
+[nodemon] Error
+    at Bus.<anonymous> (/home/ubuntu/CIS419_ChapterSix/node_modules/nodemon/lib/nodemon.js:158:25)
+    at Bus.emit (node:events:526:35)
+    at ChildProcess.<anonymous> (/home/ubuntu/CIS419_ChapterSix/node_modules/nodemon/lib/monitor/run.js:199:11)
+    at ChildProcess.emit (node:events:514:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:294:12)
+ubuntu@ip-172-31-39-188:~/CIS419_ChapterSix$
+
+
+
+### then i tried this ....
+ubuntu@ip-172-31-39-188:~/CIS419_ChapterSix$ npm install --save-dev @babel/node
+ npm install --save apollo-server-express graphql @graphql-tools/schema
+
+ubuntu@ip-172-31-39-188:~/CIS419_ChapterSix$ npm install --save graphql-tools
+
+
+
+ 349  npm install apollo-client
+  350  npm install apollo-client --force
+  351  npm install apollo-client-cache-inmemory -force
+  352  npm install apollo-cache-inmemory -force
+  353  npm install apollo-link-http  -force
+  354  npm install apollo-link-error  -force
+  355  npm install apollo-link  -force
+  356  npm install react-apollo  -force
+  357  npm install react-infinite-scroller  -force
+  358  npm install react-apollo -force
 
 
 
