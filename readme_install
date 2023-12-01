@@ -1,3 +1,8 @@
+# note: this is a fully documented effort of restoring the chapter six backup with all node modules installed. 
+
+
+
+
 sudo apt-get update
 sudo apt-get install -y ca-certificates curl gnupg
 sudo mkdir -p /etc/apt/keyrings
@@ -17,6 +22,9 @@ ubuntu@ip-172-31-39-188:~/CIS419_ChapterSix$ npm install --save react react-dom
 npm install --save-dev @babel/core babel-loader @babel/preset-env @babel/preset-react clean-webpack-plugin css-loader file-loader  html-webpack-plugin style-loader url-loader webpack webpack-cli webpack-dev-server
 npm install --save react-helmet
 npm install --save-dev mini-css-extract-plugin
+
+# chapter 2 setup code.....
+
 npm install --save express
 npm install --save nodemon
 npm install --save compression cors helmet
@@ -27,8 +35,7 @@ npm install --save   graphql@16.5.0
 ubuntu@ip-172-31-39-188:~/CIS419_ChapterSix$ npm install --save  @graphql-tools/schema
 npm install --save winston
 
- - week four  installs
-
+ - week three  installs
 
 sudo apt-get update && sudo apt-get update -y
 sudo apt-get install apache2 mysql-server php-pear php php-mysql
@@ -99,6 +106,12 @@ pw    : Password123#@!
 
 ubuntu@ip-172-31-39-188:~$ npm install --save sequelize mysql2
  npm install --save-dev babel-plugin-require-context-hook
+
+sudo npm install -g sequelize-cli
+npm install --save-dev babel-plugin-require-context-hook
+
+
+
 # check .env to make sure you have appropriate NODE_ENV to development (e.g. below)
 
 NODE_ENV=development
@@ -129,7 +142,7 @@ ubuntu@ip-172-31-39-188:~$ npm install react-infinite-scroll-component --save
 
 
 # validate this with the book.......
-  289  npm install apollo-client
+  289  npm install apollo-clientZZ
   290  npm install apollo-cache-inmemory
   291  npm install apollo-link-http
   292  npm install apollo-link-error
@@ -198,6 +211,50 @@ ubuntu@ip-172-31-39-188:~$ npm install --save jsonwebtoken bcrypt
 
 
 I had to change two separate files ( App.js / index.js ) in order to 'retest' the chapter one content. 
+
+
+# 11/30/2023 ok restart node and edit (vi) webpack.client.config in oder to update my dns.
+
+
+ubuntu@ip-172-31-39-188:~/CIS419_ChapterSix/src/client$  npm run client
+
+# works # skip the 'temp' part of the hardcoded newsfeed and move to chapter 2
+
+* I also checked the .env file
+
+
+ubuntu@ip-172-31-39-188:~/CIS419_ChapterSix$ cat .env
+NODE_ENV=development
+NODE_ENV=development
+HOST=ec2-54-70-44-189.us-west-2.compute.amazonaws.com
+REACT_APP_API_HOST=ec2-54-70-44-189.us-west-2.compute.amazonaws.com
+DANGEROUSLY_DISABLE_HOST_CHECK=true
+REACT_APP_VAR=
+REACT_APP_SECRET=
+JWT_SECRET_KEY=Asdadfafasdfasdfsadfsadfsadfasdfasdfasddddddddddddddddddddddddddddsadffffffffffvadfadfasdfasssssssss1231231231231231321231231231
+ubuntu@ip-172-31-39-188:~/CIS419_ChapterSix$ source .env
+ubuntu@ip-172-31-39-188:~/CIS419_ChapterSix$
+
+
+
+ubuntu@ip-172-31-39-188:~/CIS419_ChapterSix$ sequelize db:migrate --migrations-path  src/server/migrations --config src/server/config/index.js
+
+Sequelize CLI [Node: 20.9.0, CLI: 6.6.2, ORM: 6.35.1]
+
+Loaded configuration file "src/server/config/index.js".
+Using environment "development".
+== 20220810110632-create-post: migrating =======
+== 20220810110632-create-post: migrated (0.057s)
+
+== 20220810122408-create-user: migrating =======
+== 20220810122408-create-user: migrated (0.049s)
+
+== 20220810122445-add-userId-to-post: migrating =======
+== 20220810122445-add-userId-to-post: migrated (0.124s)
+
+== 20220814234032-add-email-password-to-post: migrating =======
+== 20220814234032-add-email-password-to-post: migrated (0.114s)
+
 
 
 
