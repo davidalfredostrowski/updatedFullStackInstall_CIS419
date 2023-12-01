@@ -13,6 +13,7 @@ sudo apt-get update
 sudo apt-get install nodejs -y
 node -v
 sudo apt install  build-essential
+sudo npm install -g pnpm
 git clone https://github.com/palomasoftware/CIS419_ChapterSix.git
 cd CIS419_ChapterSix/
 
