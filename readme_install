@@ -431,6 +431,8 @@ criptions   -force
 ubuntu@ip-172-31-39-188:~/CIS419_ChapterSix$ npm install --save @graphql-tools/schema@8.5.1 -force
 
 
+ubuntu@ip-172-31-39-188:~/CIS419_ChapterSix$ npm install --save graphql-tools@8.3.1 -force
+
 
 
 
