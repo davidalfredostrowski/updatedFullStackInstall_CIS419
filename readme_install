@@ -412,6 +412,18 @@ criptions   -force
   518  history
 
 
+# i matched all versions to the package.json from my 'old' install
+
+
+  497  npm install --save apollo-client@2.6.10 -force
+  498  npm install --save apollo-cache-inmemory@1.6.6   -force
+  499  npm install --save apollo-client@2.6.10   -force
+  500  npm install --save apollo-link@1.2.14   -force
+  501  npm install --save apollo-link-error@1.1.13   -force
+  502  npm install --save apollo-link-http@1.5.17   -force
+  503  npm install --save apollo-server-express@3.10.0   -force
+  504  ls
+  505  history
 
 
 
