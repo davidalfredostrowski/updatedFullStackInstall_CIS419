@@ -374,6 +374,43 @@ ubuntu@ip-172-31-39-188:~/CIS419_ChapterSix$ npm install --save graphql-tools
 
 
 
+1. ) uninstall all graphql*
+2. ) uninstall all apollo*
+3.) use force for all uninstall / install
+4.) installed now client 3.6.9 and graphql 16.5.0
+
+
+
+
+
+-force
+  508  npm uninstall apollo-server-plugin-bas
+
+
+
+criptions   -force
+  498  vi package.json
+  499  npm uninstall apollo-datasource   -force
+  500  npm uninstall apollo-link   -force
+  501  npm uninstall apollo-http   -force
+  502  npm uninstall apollo-link-http   -force
+  503  npm uninstall apollo-http   -force
+  504  npm uninstall apollo-reporting-protobuf   -force
+  505  npm uninstall apollo-server-core   -force
+  506  npm uninstall apollo-server-env   -force
+  507  npm uninstall apollo-server-errors   -force
+  508  npm uninstall apollo-server-plugin-base   -force
+  509  npm uninstall apollo-server-types   -force
+  510  npm uninstall graphql-tag  -force
+  511  ls
+  512  vi package.json
+  513  npm uninstall @graphql-tools/schema  -force
+  514  vi package.json
+  515  npm install --save @apollo/client@3.6.9   graphql@16.5.0
+  516  npm install --save @apollo/client@3.6.9   graphql@16.5.0 -force
+  517  vi package.json
+  518  history
+
 
 
 
