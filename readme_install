@@ -434,6 +434,31 @@ ubuntu@ip-172-31-39-188:~/CIS419_ChapterSix$ npm install --save @graphql-tools/s
 ubuntu@ip-172-31-39-188:~/CIS419_ChapterSix$ npm install --save graphql-tools@8.3.1 -force
 
 
+0.) reference the package.json from 
+
+https://github.com/palomasoftware/CIS419_Chapter4_partA/blob/main/package.json
+
+
+1. ) uninstall all graphql*
+2. ) uninstall all apollo*
+
+ use force for all uninstall / install as due to all of the installs / uninstalls there are still
+some type of dependencies that may be left over.
+
+4.) do all installs of modules with graphql or apollo in the name - this time install only
+the specific version names - this is the source of the issue and it is more complicated than
+backing out a single version since apollo/ graphql has so many dependencies.
+
+
+I tried to list all of the installs / uninstalls in my github, but you might want to double check.
+
+
+again the detailed references is: 
+
+https://github.com/davidalfredostrowski/updatedFullStackInstall_CIS419/blob/main/readme_install
+
+
+
 
 
 
